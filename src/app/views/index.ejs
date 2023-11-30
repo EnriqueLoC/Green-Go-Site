@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Go</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="short icon" href="./images/recycle.png" type="iamge/x icon">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="/" class="logo"><img src="./images/logo.png" width="120px" height="50px" alt=""></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="./images/menu.png" width="30px" height="" class="menu-icono" alt="">
+            </label>
+            <% console.log('isLoggedIn:', isLoggedIn); %>
+            <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/map">Map</a></li>
+                <% if (isLoggedIn) { %>
+                    <li><a href="/profile">Profile</a></li>
+                  <% } else { %>
+                    <li><a href="/login">Login</a></li>
+                  <% } %>
+                <li><a href="/cupons">Cupons</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="titulo">
+                <h1 data-text="Welcome">Welcome</h1>
+            </div>
+            <h2>Join us, on making the world a better place. No matter how small the step is.</h2>
+            <div>
+                <a href="#Instructions" class="btn-1">Let's Recycle</a>
+            </div>            
+        </div>
+    </header>
+    <section class="materials">
+        <div class="materials-content container">
+            <h2>Consequences of contamination</h2>
+            <p class="txt-p">
+                Contamination, whether it's in soil, water, or air, lead
+                s to dire consequences. It harms ecosystems, endangers wildlife,
+                 and can be detrimental to human health. Pollutants disrupt natural
+                  processes, contaminate food sources, and contribute to climate change.
+                   Cleanup efforts strain economies, and the impact of contamination can 
+                   persist for years, causing long-lasting harm to the environment and 
+                   society at large. Preventative measures, proper disposal, 
+                   and environmental conservation are crucial to mitigating 
+                   these consequences.
+            </p>
+            <div  class="materials-group">
+                <div class="materials-1">
+                    <img src="./images/lata 2.png"  alt=>
+                    <h3>Aluminium</h3>
+                    <p>Throwing aluminum all over the place harms the environment
+                         significantly. It contaminates soil, water, and air,
+                          disrupting ecosystems and endangering wildlife.
+                           The toxic metal enters the food chain, posing 
+                           health risks to humans and animals.</p>
+                </div>
+                <div class="materials-1">
+                    <img src="./images/carton 2.png" alt="">
+                    <h3>Carton</h3>
+                    <p>Carton waste contributes to overflowing landfills, 
+                        leading to soil pollution and hindering plant growth. 
+                        When cartons break down, they release methane, a potent 
+                        greenhouse gas. Additionally, cartons can contaminate water 
+                        bodies, harming aquatic life and ecosystems. 
+                        </p>
+                </div>
+                <div class="materials-1">
+                    <img src="./images/plastico 2.png" alt="">
+                    <h3>Plastic</h3> 
+                    <p> Plastic pollution contaminates soil, water, and air, disrupting
+                         ecosystems and endangering wildlife. Microplastics enter the food
+                          chain, posing health risks to humans. Plastic production and 
+                          incineration contribute significantly to greenhouse gas emissions,
+                           worsening climate change.</p>
+                </div>
+                <div class="materials-1">
+                    <img src="./images/papel 2.png"alt="">
+                    <h3>Paper</h3> 
+                    <p> Paper waste fills up landfills, leading to soil pollution and hindering plant 
+                        growth. Decomposing paper releases methane, a potent greenhouse gas. Additionally,
+                         paper pollution in water bodies harms aquatic life and ecosystems.</p>
+                </div>
+            </div>
+    </div>
+    </section>
+    <Section class="Instructions" id="Instructions">
+        <div class="cards container">
+            <div class="card">
+                <img src="/images/img1.jpg" alt="">
+                <div class="intro">
+                    <h2>REGISTER</h2>
+                    <p> Register to our website, ¡it takes just minutes!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/img2.jpg" alt="">
+                <div class="intro">
+                    <h2>RECYCLE</h2>
+                    <p>Start recylcling in our website with other people or enterprises and gain points</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/img3.jpg" alt="">
+                <div class="intro">
+                    <h2>EXCHANGE</h2>
+                    <p> Exchange your points for products of our allied stores</p>
+                </div>
+            </div>
+        </div>
+    </Section>
+    <footer class="footer">
+        <div class="waves container">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+            <ul class="social_icon container">
+                <li><a href="https://www.facebook.com/people/Green-GO/61553753169114/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://twitter.com/GreenGoCuu"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/green_go.cuu/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/green-go-b566362a1/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+            <ul class="menoo">
+                <li><a href="/">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        <p>©2023 GreenGo | All Rights Reserved</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

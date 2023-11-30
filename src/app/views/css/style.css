@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scrollbar-width: 8px;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Courier Prime', monospace;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    background-image: linear-gradient(
+        rgba(68, 187, 88, 0.178),
+        rgba(0, 0, 0, 0.226)),
+        url(../images/header-hd.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-content{
+    align-items: center;
+}
+.header-content h1{
+    padding: 0px 0px 0px 70px;
+    color: rgba(255, 235, 205, 0);
+    font-weight: 700;
+    font-size: 60px;
+    -webkit-text-stroke: 0.3vw #ffffff00;
+    text-transform: uppercase;
+    padding: 0px 500px 0px 500px;
+    display: flex;
+}
+h1::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0%;
+    height: 50px;
+    color: #000000;
+    border-right: 2px solid #000000;
+    overflow: hidden;
+    animation: animate 7s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        width: 0px;
+    }
+    70%
+    {
+        width: 252px;
+    }
+}
+.header-content h2{
+
+    white-space: nowrap;
+    border-right: 2px solid;
+    max-width: 1200px;
+    margin-left: 0;
+    width: 77ch;
+    animation: typing 7s steps(77),
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    font-weight: 400;
+}
+@keyframes typing{
+    from { width: 0;}
+}
+@keyframes blink{
+    50% {border-color: transparent}
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFF;
+    display: block;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+.menu .navbar ul li a:hover{
+color: #008700;
+}
+.logo{
+margin-left: 0;
+position: relative;
+}
+#menu{
+    display: none;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.btn-1{
+    margin-left: 500px;
+    margin-top: 30px;
+    display: inline-block;
+    padding: 20px 45px;
+    background-color: #329a45a4;
+    border-radius: 50px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.btn-1:hover{
+    background-color: #1c4e26a1;
+}
+.materials-content h2{
+    font-size: 53px;
+    line-height: 70px;
+    color: #000000;
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+.txt-p{
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+.materials{
+    background-image: url(../images/section\ hd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 70vh;
+    }
+.materials-content{
+        text-align: center;
+        align-items: center;
+        padding: 50px 25px;
+    }
+.materials-group{
+        display: flex;
+        justify-content: space-between;
+    }
+.materials-1{
+        padding: 50px 25px;
+        text-align: center;
+    }
+.materials-1 img{
+    border-radius: 40px;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.5s ease;
+}
+.materials-1 img:hover{
+    transform: translateY(-40px) rotate(-360deg)
+    
+
+}
+.materials-1 h3{
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.materials-1 p{
+    color: rgb(0, 0, 0)00ee;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+.Instructions{
+    background-image: url(../images/backsec2.jpg);
+    min-height: 750px;
+}
+.card img{
+    height: 500px;
+    width: 350px;
+    border-radius: px;
+    transition: .5s;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 5px black;
+    overflow: hidden;
+}
+.intro{
+    height: 60px;
+    width: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+
+    top: -101%;
+    transition: .5s;
+}
+.intro h2{
+    margin: 10px;
+    font-size: 40px;
+}
+.intro p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    justify-content: center;
+}
+.card:hover{
+    cursor: pointer;
+
+}
+.card:hover .intro{
+    height: 230px;
+
+    background: black;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+footer{
+    position: relative;
+    width: 100%;
+    background: #008700;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    justify-content: flex;
+    align-items: flex;
+}
+footer .social_icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social_icon li a{
+    font-size: 2em;
+    color: #FFFF;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icon a:hover{
+    transform: translateY(-10px);
+}
+footer .menoo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .menoo li a{
+    font-size: 1.2em;
+    color: #FFFF;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    opacity: 0.75;
+}
+footer .menoo li a:hover{
+    opacity: 1;
+}
+footer p{
+   color: #FFFF;
+   text-align: center;
+   margin-top: 15px; 
+   margin-bottom: 0px;
+   font-size: 1.1em;
+}
+.wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../images/wave.png);
+    background-size: 1000px 100px;
+}
+.wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+.wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+.wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+.wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .materials-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .materials{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-1{
+        margin-left: 25vw;
+        margin-right: 25vw;
+        align-items: center;
+    }
+    .header-content h2{
+        visibility: hidden;
+        animation: typing 0s steps(0),
+        blink .0s infinite step-end alternate;
+    }
+    .header-content h1{
+        padding: 20vh 23vw 0vh ;
+        align-items: center;
+    }
+   
+    .menu{
+    padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #3d86134d;
+        display: none;
+        z-index: 10000;
+    }
+    .menu .navbar ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked~ .navbar{
+        display: initial;
+    }
+    .logo{
+        margin-left: 0;
+    }
+
+}
+@media(max-width: 1004px){
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro{
+        width: 350px;
+    }
+    .card img{
+        width: 350px;
+    }
+    .card{
+        width: 350px;
+    }
+}

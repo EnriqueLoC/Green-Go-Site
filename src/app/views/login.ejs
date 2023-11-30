@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green GO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="short icon" href="./images/recycle.png" type="iamge/x icon">
+</head>
+
+<body>
+    <header class="wrapped">
+        <div class="menu">
+            <a href="/" class="logo"><img src="./Photos/logo.png " width="120px" height="50px" alt=""></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="./images/menu.png" width="30px" height="" class="menu-icono" alt="">
+            </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/map">Map</a></li>
+                <li><a href="">Login</a></li>  
+                <li><a href="/cupons">Cupons</a></li>
+            </ul>
+            </nav>
+    </header>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="/usersignup" method="POST">
+                <h1>CREATE ACCOUNT</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon style-ggl-icon"><i class="fa-brands fa-google style-letter"></i></a>
+                    <a href="#" class="icon style-fb-icon"><i class="fa-brands fa-facebook-f style-letter"></i></a>
+                </div>
+                <span class="txt">Or use your email for registration</span>
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="lastName" placeholder="Last Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit" class="signup">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="/userlogin" method="post">
+                <h1>LOGIN</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon style-ggl-icon"><i class="fa-brands fa-google style-letter"></i></a>
+                    <a href="#" class="icon style-fb-icon"><i class="fa-brands fa-facebook-f style-letter"></i></a>
+                </div>
+                <span class="txt">Or use your email and password to Login</span>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <a class="txt" id="passrec" href="#">Forgot Your Password?</a>
+                <button type="submit" class="login">Login</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to Login by clicking below</p>
+                    <button class="hidden" id="login">Login</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello!</h1>
+                    <p>Register with your personal details to begin recycling by clicking below</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./javascripts/script.js"></script>
+</body>
+
+</html>

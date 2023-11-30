@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Courier Prime', monospace;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    background-image: linear-gradient(
+        rgba(11, 196, 42, 0.384),
+        rgba(11, 196, 42, 0.295)),
+        url(../images/map\ header\ \(2\).jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-content{
+    align-items: center;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFF;
+    display: block;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+.menu .navbar ul li a:hover{
+    color: #008700;
+}
+.logo{
+    margin-left: 0;
+    position: relative;
+}
+#menu{
+    display: none;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+/*Contenido del header*/
+header h1{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 100px 450px 40px 450px;
+    font-size: 50px;
+}
+header h2{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 35px;
+    font-weight: 400;
+    text-align: center;
+}
+/* div map Shit*/
+#mapita{
+    
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+}
+/* Instructions */
+.Instructions{
+    background-image: url(../images/backsec2.jpg);
+    min-height: 750px;
+}
+.card img{
+    height: 500px;
+    width: 350px;
+    border-radius: px;
+    transition: .5s;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 5px black;
+    overflow: hidden;
+}
+.intro{
+    height: 60px;
+    width: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+
+    top: -101%;
+    transition: .5s;
+}
+.intro h2{
+    margin: 10px;
+    font-size: 40px;
+}
+.intro p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    justify-content: center;
+}
+.card:hover{
+    cursor: pointer;
+
+}
+.card:hover .intro{
+    height: 230px;
+
+    background: black;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+/* boton google */
+
+.playstore-button {
+    display: inline-flex;
+    margin-top: 30px;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 9999px;
+    background-color: #017501;
+    padding: 0.625rem 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    outline: 0;
+    transition: all  .2s ease;
+    text-decoration: none;
+  }
+  
+  .playstore-button:hover {
+    background-color: #329A45;
+    color: rgba(0, 0, 0, 1);
+  }
+  
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  .texts {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  
+  .text-1 {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  
+  .text-2 {
+    font-weight: 600;
+  }
+  /* Footer content*/
+  footer{
+    position: relative;
+    width: 100%;
+    background: #008700;
+    min-height: 20px;
+    padding: 5px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    justify-content: flex;
+    align-items: flex;
+}
+footer .social_icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social_icon li a{
+    font-size: 2em;
+    color: #FFFF;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icon a:hover{
+    transform: translateY(-10px);
+}
+footer .menoo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .menoo li a{
+    font-size: 1.2em;
+    color: #FFFF;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    opacity: 0.75;
+}
+footer .menoo li a:hover{
+    opacity: 1;
+}
+footer p{
+   color: #FFFF;
+   text-align: center;
+   margin-top: 15px; 
+   margin-bottom: 0px;
+   font-size: 1.1em;
+}
+.wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../images/wave.png);
+    background-size: 1000px 100px;
+}
+.wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+.wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+.wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+.wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+/* Responsive */
+@media (max-width: 800px) {
+.header-content h1{
+    padding: 20vh 23vw 0vh ;
+    align-items: center;
+}
+.menu{
+    padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #3d86135d;
+        display: none;
+        z-index: 100000;
+    }
+    .menu .navbar ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked~ .navbar{
+        display: initial;
+    }
+    .logo{
+        margin-left: 0;
+    }
+}
+@media(max-width: 1004px){
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro{
+        width: 350px;
+    }
+    .card img{
+        width: 350px;
+    }
+    .card{
+        width: 350px;
+    }
+}

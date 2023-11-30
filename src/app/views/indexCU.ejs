@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green GO</title>
+    <link rel="stylesheet" href="./css/CCU.css">
+     <link rel="short icon" href="images/recycle.png" type="iamge/x icon">
+</head>
+<body>
+
+<div class="container">
+    <!-- Coupon 1 -->
+    <div id="coupon1" class="coupon-card" style="background: linear-gradient(135deg, #045caa, #4aa1ec);">
+        <img src="/img/logo.png" class="logo" style="height: 45px;" style="width: 80px;">
+        <h3>10% discount</h3>
+        <div class="coupon-rwo">
+            <button id="cpnBtn" style="border-radius: 20px;" onclick="confirmDownloadAndHideCoupon('coupon1', './images/barcodexd.gif', 'coupon_barcode.gif')">Download </button>
+        </div>
+        <p>Valid Till: 13/01/24</p>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+
+    <!-- Coupon 2 -->
+    <div id="coupon2" class="coupon-card" style="background: linear-gradient(135deg, #F30E0E , #ec934a);" >
+        <img src="/img/OXXOlogo.png" class="logo" >
+        <h3>15% discount</h3>
+        <div class="coupon-rwo">
+            <button id="cpnBtn"  style="border-radius: 20px;" onclick="confirmDownloadAndHideCoupon('coupon2', './images/barcodexd.gif', 'coupon_barcode.gif')">Download</button>
+        </div>
+        <p>Valid Till: 23/04/24</p>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+
+    <!-- Coupon 3 -->
+    <div id="coupon3" class="coupon-card" style="background: linear-gradient(135deg, #004b8d, #5283ad);">
+        <img src="/img/logosams.png" class="logo" >
+        <h3>30% discount</h3>
+        <div class="coupon-rwo">
+            <button id="cpnBtn" style="border-radius: 20px;" onclick="confirmDownloadAndHideCoupon('coupon3', './images/barcodexd.gif', 'coupon_barcode.gif')">Download</button>
+        </div>
+        <p>Valid Till: 07/03/24</p>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+</div>
+<script>
+    function confirmDownloadAndHideCoupon(couponId, imageUrl, downloadFileName) {
+        const confirmation = window.confirm('Are you sure you want to use the coupon?');
+
+        if (confirmation) {
+            // Crea un enlace temporal
+            const downloadLink = document.createElement('a');
+            downloadLink.href = imageUrl;
+            downloadLink.download = downloadFileName; // Nombre del archivo a descargar
+
+            // Añade el enlace al documento
+            document.body.appendChild(downloadLink);
+
+            // Simula un clic en el enlace para iniciar la descarga
+            downloadLink.click();
+
+            // Elimina el enlace temporal del documento
+            document.body.removeChild(downloadLink);
+
+            // Oculta el cupón
+            const couponElement = document.getElementById(couponId);
+            couponElement.style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>
